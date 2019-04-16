@@ -1,0 +1,12 @@
+
+<div>
+  <button type="button" class="btn btn-danger" (click)='deleteCustomers()'>Delete All</button>
+</div>
+
+<div *ngFor="let customer of customers | async">
+  <customer-details [customer]='customer'></customer-details>
+</div>
+
+
+
+
